@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PageControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LFj-6B-eTn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="825"/>
+                                <connections>
+                                    <segue destination="VXh-cq-qnj" kind="embed" id="Wbh-44-5CD"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MsY-Ia-MaD">
+                                <rect key="frame" x="20" y="798" width="374" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="GTS-Ia-ggp"/>
+                                </constraints>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-6b-CgR">
+                                <rect key="frame" x="286" y="57" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="6Yf-ZB-tw8"/>
+                                    <constraint firstAttribute="height" constant="30" id="D19-qv-Ds7"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYq-Fd-9QU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojK-cz-LDd">
+                                <rect key="frame" x="20" y="56" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CyA-MP-64u"/>
+                                    <constraint firstAttribute="width" constant="108" id="RDK-gi-UNt"/>
+                                </constraints>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPreviousActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOL-RF-YOW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MsY-Ia-MaD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2uI-1r-xVa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xkh-6b-CgR" secondAttribute="trailing" constant="20" id="5Oo-eB-Ltz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MsY-Ia-MaD" secondAttribute="bottom" constant="27" id="Bf1-Xp-PSN"/>
+                            <constraint firstItem="LFj-6B-eTn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="F5e-bp-jvm"/>
+                            <constraint firstItem="xkh-6b-CgR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="Gk4-0J-Xxq"/>
+                            <constraint firstItem="LFj-6B-eTn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ISt-yA-dPR"/>
+                            <constraint firstItem="ojK-cz-LDd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ObD-TX-mXh"/>
+                            <constraint firstAttribute="bottom" secondItem="LFj-6B-eTn" secondAttribute="bottom" constant="27" id="bW7-qn-N2d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LFj-6B-eTn" secondAttribute="trailing" id="bZB-Ji-Qf5"/>
+                            <constraint firstItem="ojK-cz-LDd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="oxq-cw-EYt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsY-Ia-MaD" secondAttribute="trailing" constant="20" id="sLg-0S-YZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="MsY-Ia-MaD" id="0an-sk-PtU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="2xk-So-IEp">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="VXh-cq-qnj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVY-r1-WaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AO4-DV-o5X">
+            <objects>
+                <viewController storyboardIdentifier="page1" id="SPz-0h-y8D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lw9-hz-3Tj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sg6-WS-MiA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="-533"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WJc-sp-cAh">
+            <objects>
+                <viewController storyboardIdentifier="page2" id="0iv-5u-bcc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJD-We-2fF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VDW-P0-rYW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ii5-rP-ImE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-544"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kxL-W2-3oK">
+            <objects>
+                <viewController storyboardIdentifier="page3" id="dm7-bQ-AYG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r36-tf-i4c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="W0X-IY-BCY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xGM-VC-DKK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2481" y="-544"/>
+        </scene>
+    </scenes>
+</document>
