@@ -7,7 +7,7 @@ PageControllerDemo with swift5
 ![alt text](https://github.com/vinod1988/PageControllerDemo/blob/master/PageControllerDemo/screenshots/page1.png)
 
 
+![alt text](https://github.com/vinod1988/PageControllerDemo/blob/master/PageControllerDemo/screenshots/page2.png)
 
-https://github.com/vinod1988/PageControllerDemo/blob/master/PageControllerDemo/screenshots/page2.png
 
-https://github.com/vinod1988/PageControllerDemo/blob/master/PageControllerDemo/screenshots/page3.png
+![alt text](https://github.com/vinod1988/PageControllerDemo/blob/master/PageControllerDemo/screenshots/page3.png)
